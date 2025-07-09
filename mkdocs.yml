@@ -1,15 +1,19 @@
-site_name: Lelekin K.S.
+site_name: Lelekin
 site_url: https://lelekinkirill96.github.io/mkdocs_portfolio/
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
 
-nav:
-  - Home: index.md
-  - About: about.md
-site_author: Kirill Lelekin
-copyright: 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+
 
