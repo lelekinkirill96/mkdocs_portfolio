@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: MkDocs Demo
+site_url: https://lelekinkirill96.github.io/mkdocs_portfolio/
+theme:
+  name: material
+
+site_author: Kirill Lelekin
+copyright: 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
