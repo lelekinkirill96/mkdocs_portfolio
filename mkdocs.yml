@@ -20,6 +20,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - About: about.md
+  - About:
+    - About me: about/about.md
+    - Childhood: about/Childhood.md
 
 
