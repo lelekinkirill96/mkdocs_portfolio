@@ -5,7 +5,7 @@ theme:
 
 nav:
   - Home: index.md
-  - About: shell.md
+  - About: about.md
 site_author: Kirill Lelekin
 copyright: 
 markdown_extensions:
