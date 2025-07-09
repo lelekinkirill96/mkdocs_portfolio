@@ -3,6 +3,9 @@ site_url: https://lelekinkirill96.github.io/mkdocs_portfolio/
 theme:
   name: material
 
+nav:
+  - Home: index.md
+  - About: shell.md
 site_author: Kirill Lelekin
 copyright: 
 markdown_extensions:
