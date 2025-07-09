@@ -19,9 +19,21 @@ markdown_extensions:
 
 
 nav:
-  - Home: index.md
-  - About:
-    - About me: about/about.md
-    - Childhood: about/Childhood.md
+  - Introduction: index.md
+  - Getting Started:
+    - Prerequisites: getting-started/prerequisites.md
+    - Installation: getting-started/installation.md
+    - First Steps: getting-started/first-steps.md
+  - Core Concepts:
+    - Overview: concepts/index.md
+    - Architecture: concepts/architecture.md
+    - Components: concepts/components.md
+  - Guides:
+    - Beginner:
+      - guide/beginner/index.md
+      - Your First App: guide/beginner/first-app.md
+    - Advanced:
+      - guide/advanced/index.md
+      - Performance: guide/advanced/performance.md
 
 
