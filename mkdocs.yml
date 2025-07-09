@@ -1,4 +1,4 @@
-site_name: MkDocs Demo
+site_name: Lelekin K.S.
 site_url: https://lelekinkirill96.github.io/mkdocs_portfolio/
 theme:
   name: material
@@ -9,3 +9,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
