@@ -5,7 +5,7 @@
 И тут я хочу поделиться своими знаниями и идеями.
 
 
-![Alt text](/images/lelekin.jpg)
+![Alt text](lelekin.jpg)
 
 
 
