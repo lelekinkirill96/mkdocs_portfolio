@@ -1,16 +1,6 @@
 site_name: Lelekin
 site_url: https://lelekinkirill96.github.io/mkdocs_portfolio/
-theme:
-  name: material
-  features:
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.instant.preview
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.expand
-    - navigation.sections
+
 
 theme:
   name: dracula
