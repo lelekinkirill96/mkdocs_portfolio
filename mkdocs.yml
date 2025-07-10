@@ -36,9 +36,9 @@ nav:
       - Your First App: guide/beginner/first-app.md
     - Advanced:
       - guide/advanced/index.md
-      - Performance: guide/advanced/performance.md
-      - MoreAdvanced:
-        - guide/advanced/more-advanced/madv.md
-        - Performance2: guide/advanced/performance.md
+      - Advanced:
+        - guide/advanced/index.md
+        - Performance: guide/advanced/performance.md
+        
 
 
