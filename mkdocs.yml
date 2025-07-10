@@ -19,7 +19,7 @@ markdown_extensions:
 
 
 nav:
-  - Introduction: index.md
+  - Приветствие: index.md
   - Getting Started:
     - Prerequisites: getting-started/prerequisites.md
     - Installation: getting-started/installation.md
