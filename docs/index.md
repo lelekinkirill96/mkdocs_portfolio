@@ -5,7 +5,7 @@
 И тут я хочу поделиться своими знаниями и идеями.
 
 
-![Alt text](lelekin.jpg)
+<img src="lelekin.jpg" alt="Описание" width="300"/>
 
 
 
