@@ -12,8 +12,7 @@ theme:
     - navigation.expand
     - navigation.sections
 
-theme:
-  name: dracula
+
 
 markdown_extensions:
   - admonition
