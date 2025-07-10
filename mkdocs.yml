@@ -12,6 +12,9 @@ theme:
     - navigation.expand
     - navigation.sections
 
+theme:
+  name: mkdocs-dracula-theme
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -19,7 +22,7 @@ markdown_extensions:
 
 
 nav:
-  - Приветствие: index.md
+  - Обо мне: index.md
   - Getting Started:
     - Prerequisites: getting-started/prerequisites.md
     - Installation: getting-started/installation.md
