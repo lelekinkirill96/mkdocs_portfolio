@@ -5,7 +5,7 @@
 И тут я хочу поделиться своими знаниями и идеями.
 
 
-<img src="lelekin.jpg" alt="Описание" width="300"/>
+<img src="lelekin.png" alt="Описание" width="300"/>
 
 
 

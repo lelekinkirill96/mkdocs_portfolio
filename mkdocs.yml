@@ -13,14 +13,7 @@ markdown_extensions:
 
 nav:
   - Обо мне: index.md
-  - Getting Started:
-    - Prerequisites: getting-started/prerequisites.md
-    - Installation: getting-started/installation.md
-    - First Steps: getting-started/first-steps.md
-  - Core Concepts:
-    - Overview: concepts/index.md
-    - Architecture: concepts/architecture.md
-    - Components: concepts/components.md
+
   - Guides:
     - Beginner:
       - guide/beginner/index.md
@@ -30,6 +23,8 @@ nav:
         - Performance: guide/advanced/performance.md
         - Advanced3:
           - Performance: guide/advanced/performance.md
+
+
 
         
 
