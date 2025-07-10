@@ -16,11 +16,11 @@ nav:
 
   - Guides:
     - Запуск сайта с помощью docker и nginx:
-      - Шаг 1: guide/advanced/performance.md
-      - Шаг 2: guide/advanced/performance.md
-      - Шаг 3: guide/advanced/performance.md
-      - Шаг 4: guide/advanced/performance.md
-      - Шаг 5: guide/advanced/performance.md
+      - Шаг 1: guide/nginx+docker/step1.md
+      - Шаг 2: guide/nginx+docker/step1.md
+      - Шаг 3: guide/nginx+docker/step1.md
+      - Шаг 4: guide/nginx+docker/step1.md
+      - Шаг 5: guide/nginx+docker/step1.md
 
   - Знания:
     - Темы:
