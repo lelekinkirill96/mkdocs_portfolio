@@ -15,14 +15,12 @@ nav:
   - Обо мне: index.md
 
   - Guides:
-    - Beginner:
-      - guide/beginner/index.md
-      - Your First App: guide/beginner/first-app.md
-    - Advanced1:
-      - Advanced2:
-        - Performance: guide/advanced/performance.md
-        - Advanced3:
-          - Performance: guide/advanced/performance.md
+    - Запуск сайта с помощью docker и nginx:
+      - Шаг 1: guide/advanced/performance.md
+      - Шаг 2: guide/advanced/performance.md
+      - Шаг 3: guide/advanced/performance.md
+      - Шаг 4: guide/advanced/performance.md
+      - Шаг 5: guide/advanced/performance.md
 
   - Знания:
     - Темы:
