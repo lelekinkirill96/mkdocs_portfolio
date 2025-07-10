@@ -25,11 +25,12 @@ nav:
     - Beginner:
       - guide/beginner/index.md
       - Your First App: guide/beginner/first-app.md
-    - Advanced:
-      - guide/advanced/index.md
-      - Advanced:
-        - guide/advanced/index.md
+    - Advanced1:
+      - Advanced2:
         - Performance: guide/advanced/performance.md
+        - Advanced3:
+          - Performance: guide/advanced/performance.md
+
         
 
 
