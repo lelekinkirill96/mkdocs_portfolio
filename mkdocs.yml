@@ -15,7 +15,7 @@ nav:
   - Обо мне: index.md
 
   - Guides:
-    - Запуск сайта с помощью docker и nginx:
+    - Запуск сайта с помощью docker и nginx на Windows10:
       - Шаг 1: guide/nginx+docker/step1.md
       - Шаг 2: guide/nginx+docker/step1.md
       - Шаг 3: guide/nginx+docker/step1.md
