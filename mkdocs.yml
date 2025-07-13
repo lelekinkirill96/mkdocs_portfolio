@@ -24,7 +24,10 @@ nav:
 
   - Знания:
     - Темы:
-      - Виртуализация: question/virtualization.md
+      - Инфраструктура:
+        - Виртуализация: question/infrastructure/virtualization.md
+        - Патч Менеджмент: question/infrastructure/patchmanadgment.md
+
 
 
 
