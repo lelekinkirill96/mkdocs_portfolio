@@ -38,14 +38,7 @@ markdown_extensions:
 
 nav:
   - Обо мне: index.md
-
-  - Guides:
-    - Запуск сайта с помощью docker и nginx на Windows10:
-      - Шаг 1: guide/nginx+docker/step1.md
-      - Шаг 2: guide/nginx+docker/step1.md
-      - Шаг 3: guide/nginx+docker/step1.md
-      - Шаг 4: guide/nginx+docker/step1.md
-      - Шаг 5: guide/nginx+docker/step1.md
+    
 
   - Знания:
     - Темы:
@@ -54,6 +47,17 @@ nav:
         - Патч Менеджмент: question/infrastructure/patchmanadgment.md
       - Сети:
         - Модель OSI: question/seti/OSI.md
+    
+    - Инструкции:
+      - Сайт на mkdocs: guide/mkdocs/instruction.md
+      - Запуск сайта с помощью docker и nginx на Windows10:
+        - Шаг 1: guide/nginx+docker/step1.md
+        - Шаг 2: guide/nginx+docker/step1.md
+        - Шаг 3: guide/nginx+docker/step1.md
+        - Шаг 4: guide/nginx+docker/step1.md
+        - Шаг 5: guide/nginx+docker/step1.md
+      
+
 
 
 
