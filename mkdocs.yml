@@ -42,11 +42,15 @@ nav:
 
   - Знания:
     - Темы:
+      
       - Инфраструктура:
         - Виртуализация: question/infrastructure/virtualization.md
         - Патч Менеджмент: question/infrastructure/patchmanadgment.md
       - Сети:
         - Модель OSI: question/seti/OSI.md
+        - Популярные порты: question/seti/popiularports.md
+        - Основные вопросы по Network: question/seti/questionsnetwork.md
+        - Полезные ссылки: question/seti/links.md
     
     - Инструкции:
       - Сайт на mkdocs: guide/mkdocs/instruction.md
