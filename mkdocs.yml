@@ -51,6 +51,7 @@ nav:
         - Популярные порты: question/seti/popiularports.md
         - Основные вопросы по Network: question/seti/questionsnetwork.md
         - Полезные ссылки: question/seti/links.md
+        - DHCP: question/seti/DHCP.md
     
     - Инструкции:
       - Сайт на mkdocs: guide/mkdocs/instruction.md
