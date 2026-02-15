@@ -4,44 +4,72 @@
 <script>
 function toggleText() {
   var text = document.getElementById("hiddenText");
+  var link = document.getElementById("toggleLink");
+
   if (text.style.display === "none") {
     text.style.display = "block";
+    link.textContent = "Скрыть ответ";
   } else {
     text.style.display = "none";
+    link.textContent = "Не положит ли сканирование сеть?";
   }
 }
 </script>
 
-<a href="javascript:void(0);" onclick="toggleText();">Не положит ли сканирование сеть?</a>
-<div id="hiddenText" style="display:none;">
+<style>
+.toggle-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+.hidden-text {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0066cc;
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: none;
+}
+
+.hidden-text ul {
+  padding-left: 20px;
+}
+
+.hidden-text li {
+  margin-bottom: 5px;
+}
+</style>
+
+<a id="toggleLink" class="toggle-link" href="javascript:void(0);" onclick="toggleText();">Не положит ли сканирование сеть?</a>
+
+<div id="hiddenText" class="hidden-text">
 Сканирование сети не перегрузит инфраструктуру, если правильно настроить параметры:
+
 ✅ **Ограничить скорость и нагрузку:**
 - Установить максимум параллельных задач (например, 5–10).
-
 - Задать лимиты на количество запросов в секунду (например, 100–500 пакетов/сек).
-
 - Настроить тайм-ауты для неотвечающих хостов (2–5 секунд).
-
 - Ограничить пропускную способность (например, 1–10 Мбит/с).
 
 ✅ **Использовать щадящие методы:**
 - Агентное сканирование (минимальная нагрузка на сеть).
-
 - Сканирование с учётными данными (SSH/WinRM/SNMP) вместо массовых сетевых запросов.
 
 ✅ **Запускать в безопасное время:**
 - Планировать задачи на непиковые часы (ночь, выходные).
-
 - Использовать технологические окна для критически важных сегментов.
 
 ✅ **Мониторить и корректировать:**
 - Следить за загрузкой сети и устройств во время сканирования.
-
 - При превышении порогов — приостанавливать или перенастраивать задачи.
 </div>
-
-
-
 
 
 
