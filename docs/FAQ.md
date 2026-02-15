@@ -98,31 +98,80 @@ function toggleText() {
 
 ---
 
-### Как Discovery видит устройства за NAT или в закрытых сегментах?
+<script>
+function toggleText() {
+  const text = document.getElementById("hiddenTextNAT");
+  const link = document.getElementById("toggleLinkNAT");
 
-Для полного покрытия инфраструктуры используйте **комбинацию сенсоров и агентов**. Сенсор подключается к основному серверу Vulns.io и выполняет сканирование от своего имени, передавая результаты обратно.
+  if (text.style.display === "none" || text.style.display === "") {
+    text.style.display = "block";
+    link.textContent = "Скрыть ответ ▼";
+  } else {
+    text.style.display = "none";
+    link.textContent = "Как Discovery видит устройства за NAT или в закрытых сегментах? ▶";
+  }
+}
+</script>
 
-**Преимущества:**
+<style>
+.toggle-link {
+  color: #2c3e50;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-- Сканирует устройства, недоступные напрямую из основной сети.
-  
-- Поддерживает все режимы сканирования (агентный, безагентный, "чёрный ящик").
-  
-- Может быть развёрнут в облаке, DMZ, изолированных VLAN.
+.toggle-link:hover {
+  color: #3498db;
+}
 
----
+.hidden-text {
+  display: none;
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+}
 
-### Зачем нужен Discovery, если у нас есть актуальный список в Active Directory / CMDB?
+.section-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
 
-Discovery — **не альтернатива, а дополнение** к AD/CMDB. Он помогает:
+.section-content {
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
 
-- Закрыть "слепые зоны" (Shadow IT, неучтённые устройства).
-  
-- Контролировать актуальность данных.
-  
-- Обнаруживать устаревшие или новые устройства.
-  
-- Обеспечивать полноту сканирования на уязвимости.
+.section-content li {
+  margin-bottom: 6px;
+}
+</style>
+
+<a id="toggleLinkNAT" class="toggle-link" onclick="toggleText()">
+  Как Discovery видит устройства за NAT или в закрытых сегментах? ▶
+</a>
+
+<div id="hiddenTextNAT" class="hidden-text">
+  Для полного покрытия инфраструктуры используйте комбинацию сенсоров и агентов. Сенсор подключается к основному серверу Vulns.io и выполняет сканирование от своего имени, передавая результаты обратно.
+
+  <div class="section-title">Преимущества:</div>
+  <ul class="section-content">
+    <li>Сканирует устройства, недоступные напрямую из основной сети.</li>
+    <li>Поддерживает все режимы сканирования (агентный, безагентный, "чёрный ящик").</li>
+    <li>Может быть развёрнут в облаке, DMZ, изолированных VLAN.</li>
+  </ul>
+</div>
 
 ---
 
