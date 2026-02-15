@@ -175,21 +175,85 @@ function toggleText() {
 
 ---
 
-### Как система понимает, что это один и тот же ноутбук, если он сменил IP или перешёл с Wi-Fi на медь?
+<script>
+function toggleText() {
+  const text = document.getElementById("hiddenTextDeduplication");
+  const link = document.getElementById("toggleLinkDeduplication");
 
-Система **Vulns.io Enterprise VM** использует **комплекс уникальных идентификаторов** для дедубликации:
+  if (text.style.display === "none" || text.style.display === "") {
+    text.style.display = "block";
+    link.textContent = "Скрыть ответ ▼";
+  } else {
+    text.style.display = "none";
+    link.textContent = "Как система понимает, что это один и тот же ноутбук, если он сменил IP или перешёл с Wi-Fi на медь? ▶";
+  }
+}
+</script>
 
-- MAC-адрес.
+<style>
+.toggle-link {
+  color: #2c3e50;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-- UUID.
+.toggle-link:hover {
+  color: #3498db;
+}
 
-- Имя хоста (hostname).
+.hidden-text {
+  display: none;
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+}
 
-- Ключи реестра (для Windows).
+.section-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
 
-- Данные инвентаризации и список ПО.
+.section-content {
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
 
-Это позволяет корректно определять устройство даже при смене IP или типа подключения.
+.section-content li {
+  margin-bottom: 6px;
+}
+</style>
+
+<a id="toggleLinkDeduplication" class="toggle-link" onclick="toggleText()">
+  Как система понимает, что это один и тот же ноутбук, если он сменил IP или перешёл с Wi-Fi на медь? ▶
+</a>
+
+<div id="hiddenTextDeduplication" class="hidden-text">
+  Система Vulns.io Enterprise VM использует комплекс уникальных идентификаторов для дедубликации:
+
+  <div class="section-title">Используемые идентификаторы:</div>
+  <ul class="section-content">
+    <li><strong>MAC-адрес</strong> — уникальный аппаратный идентификатор.</li>
+    <li><strong>UUID</strong> — уникальный идентификатор устройства.</li>
+    <li><strong>Имя хоста (hostname)</strong> — сетевое имя устройства.</li>
+    <li><strong>Ключи реестра</strong> — для устройств на базе Windows.</li>
+    <li><strong>Данные инвентаризации и список ПО</strong> — дополнительные атрибуты.</li>
+  </ul>
+
+  Это позволяет корректно определять устройство даже при смене IP или типа подключения.
+</div>
+
 
 ---
 
