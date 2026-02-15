@@ -3,74 +3,97 @@
 
 <script>
 function toggleText() {
-  var text = document.getElementById("hiddenText");
-  var link = document.getElementById("toggleLink");
+  const text = document.getElementById("hiddenText");
+  const link = document.getElementById("toggleLink");
 
-  if (text.style.display === "none") {
+  if (text.style.display === "none" || text.style.display === "") {
     text.style.display = "block";
-    link.textContent = "Скрыть ответ";
+    link.textContent = "Скрыть ответ ▼";
   } else {
     text.style.display = "none";
-    link.textContent = "Не положит ли сканирование сеть?";
+    link.textContent = "Не положит ли сканирование сеть? ▶";
   }
 }
 </script>
 
 <style>
 .toggle-link {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
+  color: #2c3e50;
+  font-weight: 600;
   cursor: pointer;
-  display: inline-block;
-  margin-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .toggle-link:hover {
-  text-decoration: underline;
+  color: #3498db;
 }
 
 .hidden-text {
-  background-color: #f8f9fa;
-  border-left: 4px solid #0066cc;
-  padding: 10px 15px;
-  margin: 10px 0;
   display: none;
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
 }
 
-.hidden-text ul {
-  padding-left: 20px;
+.section-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
-.hidden-text li {
-  margin-bottom: 5px;
+.section-content {
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
+
+.section-content li {
+  margin-bottom: 6px;
 }
 </style>
 
-<a id="toggleLink" class="toggle-link" href="javascript:void(0);" onclick="toggleText();">Не положит ли сканирование сеть?</a>
+<a id="toggleLink" class="toggle-link" onclick="toggleText()">
+  Не положит ли сканирование сеть? ▶
+</a>
 
 <div id="hiddenText" class="hidden-text">
-Сканирование сети не перегрузит инфраструктуру, если правильно настроить параметры:
+  Сканирование сети не перегрузит инфраструктуру, если правильно настроить параметры:
 
-✅ **Ограничить скорость и нагрузку:**
-- Установить максимум параллельных задач (например, 5–10).
-- Задать лимиты на количество запросов в секунду (например, 100–500 пакетов/сек).
-- Настроить тайм-ауты для неотвечающих хостов (2–5 секунд).
-- Ограничить пропускную способность (например, 1–10 Мбит/с).
+  <div class="section-title">✅ Ограничение скорости и нагрузки:</div>
+  <ul class="section-content">
+    <li>Установить максимум параллельных задач (например, 5–10).</li>
+    <li>Задать лимиты на количество запросов в секунду (например, 100–500 пакетов/сек).</li>
+    <li>Настроить тайм-ауты для неотвечающих хостов (2–5 секунд).</li>
+    <li>Ограничить пропускную способность (например, 1–10 Мбит/с).</li>
+  </ul>
 
-✅ **Использовать щадящие методы:**
-- Агентное сканирование (минимальная нагрузка на сеть).
-- Сканирование с учётными данными (SSH/WinRM/SNMP) вместо массовых сетевых запросов.
+  <div class="section-title">✅ Щадящие методы сканирования:</div>
+  <ul class="section-content">
+    <li>Агентное сканирование (минимальная нагрузка на сеть).</li>
+    <li>Сканирование с учётными данными (SSH/WinRM/SNMP) вместо массовых сетевых запросов.</li>
+  </ul>
 
-✅ **Запускать в безопасное время:**
-- Планировать задачи на непиковые часы (ночь, выходные).
-- Использовать технологические окна для критически важных сегментов.
+  <div class="section-title">✅ Оптимальное время выполнения:</div>
+  <ul class="section-content">
+    <li>Планировать задачи на непиковые часы (ночь, выходные).</li>
+    <li>Использовать технологические окна для критически важных сегментов.</li>
+  </ul>
 
-✅ **Мониторить и корректировать:**
-- Следить за загрузкой сети и устройств во время сканирования.
-- При превышении порогов — приостанавливать или перенастраивать задачи.
+  <div class="section-title">✅ Мониторинг и корректировка:</div>
+  <ul class="section-content">
+    <li>Следить за загрузкой сети и устройств во время сканирования.</li>
+    <li>При превышении порогов — приостанавливать или перенастраивать задачи.</li>
+  </ul>
 </div>
-
 
 
 ---
