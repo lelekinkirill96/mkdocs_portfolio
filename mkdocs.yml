@@ -1,4 +1,4 @@
-site_name: Lelekin
+site_name: Vulns.io Enterprise VM
 site_url: https://lelekinkirill96.github.io/mkdocs_portfolio/
 
 
@@ -37,31 +37,8 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Обо мне: index.md
-    
+  - Проблема "слепых зон": index.md
 
-  - Знания:
-    - Темы:
-      
-      - Инфраструктура:
-        - Виртуализация: question/infrastructure/virtualization.md
-        - Патч Менеджмент: question/infrastructure/patchmanadgment.md
-      - Сети:
-        - Модель OSI: question/seti/OSI.md
-        - Популярные порты: question/seti/popiularports.md
-        - Основные вопросы по Network: question/seti/questionsnetwork.md
-        - Полезные ссылки: question/seti/links.md
-        - DHCP: question/seti/DHCP.md
-    
-    - Инструкции:
-      - Сайт на mkdocs: guide/mkdocs/instruction.md
-      - Запуск сайта с помощью docker и nginx на Windows10:
-        - Шаг 1: guide/nginx+docker/step1.md
-        - Шаг 2: guide/nginx+docker/step1.md
-        - Шаг 3: guide/nginx+docker/step1.md
-        - Шаг 4: guide/nginx+docker/step1.md
-        - Шаг 5: guide/nginx+docker/step1.md
-      
 
 
 
