@@ -37,7 +37,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Проблема "слепых зон": index.md
+  - Слепые зоны и их риски: index.md
 
 
 
