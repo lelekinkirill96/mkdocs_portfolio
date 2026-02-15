@@ -257,16 +257,87 @@ function toggleText() {
 
 ---
 
-### Можно ли доверять результатам Discovery, если у половины устройств закрыты порты?
+<script>
+function toggleText() {
+  const text = document.getElementById("hiddenTextTrust");
+  const link = document.getElementById("toggleLinkTrust");
 
-**Без дополнительных мер — нет.** Discovery покажет только "живые" хосты, но не даст полной информации об ОС, ПО и уязвимостях.
+  if (text.style.display === "none" || text.style.display === "") {
+    text.style.display = "block";
+    link.textContent = "Скрыть ответ ▼";
+  } else {
+    text.style.display = "none";
+    link.textContent = "Можно ли доверять результатам Discovery, если у половины устройств закрыты порты? ▶";
+  }
+}
+</script>
 
-**С дополнительными мерами — да.** Используйте:
+<style>
+.toggle-link {
+  color: #2c3e50;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-- Сканирование с учётными данными (SSH/WinRM/SNMP).
+.toggle-link:hover {
+  color: #3498db;
+}
 
-- **Port Knocking** для доступа к закрытым портам.
+.hidden-text {
+  display: none;
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+}
 
-- Сенсоры для сканирования изолированных сегментов.
+.warning {
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-left: 4px solid #ffc107;
+}
 
-- Интеграцию с AD/CMDB для дополнения данных.
+.success {
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-left: 4px solid #28a745;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.section-content {
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
+
+.section-content li {
+  margin-bottom: 6px;
+}
+</style>
+
+<a id="toggleLinkTrust" class="toggle-link" onclick="toggleText()">
+  Можно ли доверять результатам Discovery, если у половины устройств закрыты порты? ▶
+</a>
+
+<div id="hiddenTextTrust" class="hidden-text">
+  <div class="warning">
+    <strong>Без 
+
