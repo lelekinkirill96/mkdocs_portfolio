@@ -38,6 +38,7 @@ markdown_extensions:
 
 nav:
   - Слепые зоны и их риски: index.md
+  - FAQ: FAQ.md
 
 
 
